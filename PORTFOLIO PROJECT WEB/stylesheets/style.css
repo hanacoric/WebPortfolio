@@ -1,0 +1,316 @@
+@font-face {
+    font-family: belfastgrotesk;
+    src: url(../resources/fonts/BelfastGroteskRegular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: belfastgroteskbold;
+    src: url(../resources/fonts/BelfastGroteskBold.ttf) format("truetype");
+  }
+
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: belfastgrotesk;
+}
+
+body{
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.black_section::-webkit-scrollbar {
+    display: none;
+  }
+
+.black_section{
+    height: 330vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    color: white;
+    text-align: center;  
+    height: 50vh;
+    margin-top: 25vh;
+}
+
+.intro h1 {
+    text-align: center;
+    font-weight: lighter; 
+    font-size: 2em;
+    animation: fade-in 4s;
+  }
+  
+.intro h2 {
+    font-weight: bold;
+    text-align: center;
+    font-family: belfastgroteskbold;
+    font-size: 5em;
+    animation: fade-in 2s;
+  }
+  
+  .intro h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2em;
+    animation: fade-in 6s;
+  }
+
+  .line{
+    background-color: white;
+    opacity: 0;
+    width: 4px;
+    height: 510px;
+    position: absolute;
+    margin-top: 90vh;
+  }
+
+  .next_line{
+    background-color: white;
+    opacity: 0;
+    width: 4px;
+    height: 600px;
+    position: absolute;
+    margin-top: 200vh;
+  }
+  
+  .line.animate , .next_line.animate{
+    animation: fade-in 1s;
+    opacity: 1;
+  }
+
+.info, .goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: min-content;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25vh;
+}
+
+.BusinessCardBack {
+    height: min-content;
+    width: 80vw;
+    background-color: black;
+}
+
+.BusinessCardFront {
+    display: flex;
+    height: min-content;
+    width: 80vw;
+    justify-content: right;
+    background-color: black; 
+}
+
+.fade-in-image {
+    opacity: 0;
+}
+
+.fade-in-image.active {
+    animation: fade-in 2s;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+
+.white_section{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    font-size: 2em;
+}
+
+.white_section h1{
+    font-family: belfastgroteskbold;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color: black;
+    text-align: center;  
+    height: min-content;
+}
+
+.posters{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: min-content;
+}
+
+.slideshow_posters{
+    width: 300px;
+    height: 398px;
+}
+
+.logos{
+    width: 80vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: min-content;
+}
+
+.slideshow_logos{
+    width: 300px;
+    height: 278px;
+}
+
+.logos h2{
+    width: fit-content;
+}
+
+.website{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: min-content;
+}
+
+.website h3{
+    width: fit-content;
+}
+
+.website_img{
+    width: 300px;
+    height: 300px;
+}
+
+.video_cv_section{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D4D4D2;
+}
+
+.video_cv_section h1{
+    font-family: belfastgroteskbold;
+    font-size: 3em;
+}
+
+.video_cv_section a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.end_section{
+    height: 130vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv_img{
+    width: 420px;
+    height: 543px;
+}
+
+.pdf_cv_section{
+    height: max-content;
+    display: flex;  
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.start_pdf_button{
+    height: 65vh;
+    font-family: belfastgroteskbold;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    display: flex;
+    justify-content: flex-end;
+    color: #D4D4D2;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.end_pdf_button{
+    height: 65vh;
+    font-family: belfastgroteskbold;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: flex-end;
+    color: #D4D4D2;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.end_pdf_button a, .start_pdf_button a{
+    font-family: belfastgroteskbold;
+    text-decoration: none;
+    color: #D4D4D2;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2em;
+}
+
+.footer_section{
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_section h1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+}
+
+.footer_section a{
+    text-decoration: none;
+    color: black;
+}
+  
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
